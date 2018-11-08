@@ -1,0 +1,6 @@
+name: Vote for Event
+type: module
+description: This module allows site visitors to vote on what city they would like to see host their favorite event next year.
+package: Custom
+type: module
+core: 8.x

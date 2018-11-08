@@ -1,0 +1,22 @@
+vote_for_event:
+    path: /vote/event
+    defaults:
+        _controller: Drupal\vote_for_event\Controller\VoteForEventController::vote
+    requirements:
+        _permission: 'access content'
+        
+vote_for_event.content:
+  path: '/vote/form'
+  defaults:
+    _form: '\Drupal\vote_for_event\Form\voteForm'
+    _title: 'Vote Form'
+  requirements:
+    _permission: 'access content'
+    
+vote_for_event.result:
+  path: '/vote/result'
+  defaults:
+    _form: '\Drupal\vote_for_event\Form\voteResult'
+    _title: 'Thank you for voting'
+  requirements:
+    _permission: 'access content'
