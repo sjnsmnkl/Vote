@@ -1,0 +1,10 @@
+1. Commands used to commit my code to Git:
+	cd d:vote_for_event (I moved my module files from F/wamp64/www/drupal-8.6.2/modules/vote_for_event because it is more handy to push)
+	git init
+	git add .
+	git commit -m "Vote for Event Drupal 8 module 1.0"
+	git remote add origin https://github.com/sjnsmnkl/Vote.git
+	git push -u origin master
+
+2. How to protect the form from users submitting several votes for the same event or other forms of voting manipulation?
+	Try verifing email address by sending Verification Code to users' email.
